@@ -1,4 +1,5 @@
 {
   "/(main)/loanapp/dashboard/page": "app/(main)/loanapp/dashboard/page.js",
-  "/(main)/loanapp/new/page": "app/(main)/loanapp/new/page.js"
+  "/(main)/loanapp/new/page": "app/(main)/loanapp/new/page.js",
+  "/(main)/loanapp/applications/[applicationId]/page": "app/(main)/loanapp/applications/[applicationId]/page.js"
 }

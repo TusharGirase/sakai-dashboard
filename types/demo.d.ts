@@ -1,5 +1,5 @@
 /* FullCalendar Types */
-import { EventApi, EventInput } from '@fullcalendar/core';
+import { EventInput } from '@fullcalendar/core';
 
 /* Chart.js Types */
 import { ChartData, ChartOptions } from 'chart.js';
@@ -15,9 +15,12 @@ export interface CustomEvent {
     name?: string;
     status?: 'Ordered' | 'Processing' | 'Shipped' | 'Delivered';
     date?: string;
-    color?: string;
-    icon?: string;
-    image?: string;
+}
+
+export interface LoanApplicationEvent {
+    status?: 'PENDING' | 'APPROVED' | 'DISBURSED' | 'CLOSED' | 'REJECTED';
+    updatedAt?: string;
+    updatedBy?: string;
 }
 
 interface ShowOptions {
@@ -35,6 +38,7 @@ export interface ChartDataState {
     polarData?: ChartData;
     radarData?: ChartData;
 }
+
 export interface ChartOptionsState {
     barOptions?: ChartOptions;
     pieOptions?: ChartOptions;
