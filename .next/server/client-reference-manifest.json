@@ -40,9 +40,9 @@
         "async": false
       }
     },
-    "(app-client)/./app/layout.tsx": {
+    "(app-client)/./layout/layout.tsx": {
       "*": {
-        "id": "(sc_client)/./app/layout.tsx",
+        "id": "(sc_client)/./layout/layout.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -56,9 +56,17 @@
         "async": false
       }
     },
-    "(app-client)/./layout/layout.tsx": {
+    "(app-client)/./app/layout.tsx": {
       "*": {
-        "id": "(sc_client)/./layout/layout.tsx",
+        "id": "(sc_client)/./app/layout.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(main)/loanapp/dashboard/page.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/(main)/loanapp/dashboard/page.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -147,11 +155,11 @@
       ],
       "async": false
     },
-    "C:\\Users\\TGIRASE\\IdeaProjects\\sakai-dashboard\\app\\layout.tsx": {
-      "id": "(app-client)/./app/layout.tsx",
+    "C:\\Users\\TGIRASE\\IdeaProjects\\sakai-dashboard\\layout\\layout.tsx": {
+      "id": "(app-client)/./layout/layout.tsx",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/(main)/layout:static/chunks/app/(main)/layout.js"
       ],
       "async": false
     },
@@ -163,20 +171,29 @@
       ],
       "async": false
     },
-    "C:\\Users\\TGIRASE\\IdeaProjects\\sakai-dashboard\\layout\\layout.tsx": {
-      "id": "(app-client)/./layout/layout.tsx",
+    "C:\\Users\\TGIRASE\\IdeaProjects\\sakai-dashboard\\app\\layout.tsx": {
+      "id": "(app-client)/./app/layout.tsx",
       "name": "*",
       "chunks": [
-        "app/(main)/layout:static/chunks/app/(main)/layout.js"
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\TGIRASE\\IdeaProjects\\sakai-dashboard\\app\\(main)\\loanapp\\dashboard\\page.tsx": {
+      "id": "(app-client)/./app/(main)/loanapp/dashboard/page.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(main)/loanapp/dashboard/page:static/chunks/app/(main)/loanapp/dashboard/page.js"
       ],
       "async": false
     }
   },
   "entryCSSFiles": {
+    "C:\\Users\\TGIRASE\\IdeaProjects\\sakai-dashboard\\app\\(main)\\layout": [],
+    "C:\\Users\\TGIRASE\\IdeaProjects\\sakai-dashboard\\app\\(main)\\loanapp\\new\\page": [],
     "C:\\Users\\TGIRASE\\IdeaProjects\\sakai-dashboard\\app\\layout": [
       "static/css/app/layout.css"
     ],
-    "C:\\Users\\TGIRASE\\IdeaProjects\\sakai-dashboard\\app\\(main)\\loanapp\\new\\page": [],
-    "C:\\Users\\TGIRASE\\IdeaProjects\\sakai-dashboard\\app\\(main)\\layout": []
+    "C:\\Users\\TGIRASE\\IdeaProjects\\sakai-dashboard\\app\\(main)\\loanapp\\dashboard\\page": []
   }
 }
