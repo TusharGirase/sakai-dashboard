@@ -1,26 +1,32 @@
 /* eslint-disable @next/next/no-img-element */
 
-import React, { useContext } from 'react';
+import React from 'react';
 import AppMenuitem from './AppMenuitem';
-import { LayoutContext } from './context/layoutcontext';
 import { MenuProvider } from './context/menucontext';
-import Link from 'next/link';
 import { AppMenuItem } from '@/types';
 
 const AppMenu = () => {
-
     const model: AppMenuItem[] = [
         {
             label: 'Home',
             items: [
                 { label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/' },
                 {
-                    label: 'Orders',
-                    icon: 'pi pi-fw pi-list',
-                    to: '/orders'
+                    label: 'Asetman',
+                    items: [
+                        { label: 'Dashboard', icon: 'pi pi-fw pi-circle', to: '/assetman/dashboard' },
+                        { label: 'New', icon: 'pi pi-fw pi-plus', to: '/assetman/new' }
+                    ]
+                },
+                {
+                    label: 'LoanApp',
+                    items: [
+                        { label: 'Dashboard', icon: 'pi pi-fw pi-circle', to: '/loanapp/dashboard' },
+                        { label: 'New', icon: 'pi pi-fw pi-plus', to: '/loanapp/new' }
+                    ]
                 }
             ]
-        },
+        }
     ];
 
     return (
